@@ -1,0 +1,32 @@
+{
+  "actual_rows": {
+    "test": 56746,
+    "train": 170235,
+    "validation": 56745
+  },
+  "fraud_counts": {
+    "test": 74,
+    "train": 342,
+    "validation": 57
+  },
+  "method": "chronological by Time; ties kept together",
+  "requested_fractions": {
+    "test": 0.2,
+    "train": 0.6,
+    "validation": 0.2
+  },
+  "time_ranges": {
+    "test": [
+      145234.0,
+      172792.0
+    ],
+    "train": [
+      0.0,
+      120392.0
+    ],
+    "validation": [
+      120393.0,
+      145233.0
+    ]
+  }
+}

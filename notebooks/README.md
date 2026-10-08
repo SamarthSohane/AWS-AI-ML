@@ -1,0 +1,1 @@
+The executed research notebook is `fraud_detection_and_drift_monitoring.ipynb`. It locates the repository root, calls the same end-to-end pipeline as the CLI, and then displays audit/results tables and figures. Run all cells after installing `requirements.txt` and placing `creditcard.csv` at `data/raw/creditcard.csv` (or editing the notebook's `PipelineConfig`).

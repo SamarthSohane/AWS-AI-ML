@@ -1,0 +1,80 @@
+{
+  "selection_rule": "Highest validation Average Precision among supervised candidates; thresholds minimize validation expected cost.",
+  "supervised_model_selected_by_validation_pr_auc": "logistic_regression",
+  "thresholds": {
+    "hist_gradient_boosting": 0.29793501960147767,
+    "isolation_forest": 0.27366132170141544,
+    "logistic_regression": 0.9996296180473286
+  },
+  "validation_selection_details": {
+    "hist_gradient_boosting": {
+      "threshold": 0.29793501960147767,
+      "validation_average_precision": 0.7518703652456505,
+      "validation_metrics_at_selected_threshold": {
+        "actual_positive_rate": 0.0010044937879989425,
+        "estimated_total_cost": 1269.44,
+        "f1": 0.6474820143884892,
+        "false_negative_cost": 90.37,
+        "false_negative_rate": 0.21052631578947367,
+        "false_negatives": 12,
+        "false_positive_cost": 5.0,
+        "false_positive_rate": 0.000652695455828394,
+        "false_positives": 37,
+        "pr_auc": 0.7518703652456505,
+        "precision": 0.5487804878048781,
+        "predicted_positive_rate": 0.001445061238875672,
+        "recall": 0.7894736842105263,
+        "roc_auc": 0.977670325970161,
+        "threshold": 0.29793501960147767,
+        "true_negatives": 56651,
+        "true_positives": 45
+      }
+    },
+    "isolation_forest": {
+      "threshold": 0.27366132170141544,
+      "validation_average_precision": 0.022148570479221235,
+      "validation_metrics_at_selected_threshold": {
+        "actual_positive_rate": 0.0010044937879989425,
+        "estimated_total_cost": 5156.09,
+        "f1": 0.0,
+        "false_negative_cost": 90.37,
+        "false_negative_rate": 1.0,
+        "false_negatives": 57,
+        "false_positive_cost": 5.0,
+        "false_positive_rate": 1.764041772509173e-05,
+        "false_positives": 1,
+        "pr_auc": 0.022148570479221235,
+        "precision": 0.0,
+        "predicted_positive_rate": 1.7622698035069167e-05,
+        "recall": 0.0,
+        "roc_auc": 0.9358510851642229,
+        "threshold": 0.27366132170141544,
+        "true_negatives": 56687,
+        "true_positives": 0
+      }
+    },
+    "logistic_regression": {
+      "threshold": 0.9996296180473286,
+      "validation_average_precision": 0.7726808523329118,
+      "validation_metrics_at_selected_threshold": {
+        "actual_positive_rate": 0.0010044937879989425,
+        "estimated_total_cost": 1299.81,
+        "f1": 0.6984126984126984,
+        "false_negative_cost": 90.37,
+        "false_negative_rate": 0.22807017543859648,
+        "false_negatives": 13,
+        "false_positive_cost": 5.0,
+        "false_positive_rate": 0.00044101044312729325,
+        "false_positives": 25,
+        "pr_auc": 0.7726808523329118,
+        "precision": 0.6376811594202898,
+        "predicted_positive_rate": 0.0012159661644197727,
+        "recall": 0.7719298245614035,
+        "roc_auc": 0.9709258062599344,
+        "threshold": 0.9996296180473286,
+        "true_negatives": 56663,
+        "true_positives": 44
+      }
+    }
+  }
+}

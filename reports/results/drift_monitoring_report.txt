@@ -1,0 +1,17 @@
+DRIFT MONITORING REPORT
+-----------------------
+Features monitored: 29
+Features with significant drift (PSI ≥ 0.25): 7
+Features with moderate PSI (0.10–0.25): 9
+Features flagged (fraction): 55.2%
+Average PSI: 0.233
+Maximum PSI: 1.463
+Maximum model-score PSI: 0.026
+Model-output comparisons:
+  Logistic Regression (class-weighted baseline): PSI=0.012; KS=0.050; predicted-positive rate 0.122% → 0.134%
+  HistGradientBoosting (class-weighted): PSI=0.008; KS=0.036; predicted-positive rate 0.145% → 0.164%
+  Isolation Forest (normal-only, unsupervised): PSI=0.026; KS=0.065; predicted-positive rate 0.002% → 0.000%
+Drift status: ALERT
+Triggered by: flagged feature fraction, average feature PSI
+Recommended action: Model retraining/review recommended.
+Note: PSI and KS thresholds are heuristics and require calibration to a production baseline.

@@ -1,0 +1,8 @@
+{
+  "currency_note": "USD-equivalent illustrative assumptions; replace with institution-specific loss and review costs.",
+  "derivation": "FN cost explicitly overridden by the run configuration",
+  "false_negative_cost": 90.37,
+  "false_positive_cost": 5.0,
+  "formula": "FP \u00d7 C_FP + FN \u00d7 C_FN",
+  "unrecovered_fraud_fraction": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "description": "Synthetic concept-drift stress test: preserve every feature value, then increase the fraud-label incidence in a feature-defined tail that had low mean score on validation. The chosen region used training quantiles and validation scores only, not labels. This is not observed fraud data.",
+  "region_rule": {
+    "cut": -2.072775741241762,
+    "direction": "low",
+    "feature": "V4",
+    "training_quantile": 0.05,
+    "validation_mean_score": 0.01317906279845052,
+    "validation_region_fraction": 0.07685258613093665,
+    "validation_region_rows": 4361,
+    "validation_score_median": 0.024324677614830727
+  },
+  "test_injection": {
+    "base_fraud_count": 74,
+    "base_fraud_fraction": 0.0013040566735981391,
+    "cut": -2.072775741241762,
+    "direction": "low",
+    "eligible_legitimate_rows": 3619,
+    "feature": "V4",
+    "injection_rate_within_eligible_region": 0.1,
+    "region_rows": 3619,
+    "shifted_fraud_count": 436,
+    "shifted_fraud_fraction": 0.007683360941740387,
+    "synthetic_frauds_added": 362
+  },
+  "validation_injection": {
+    "base_fraud_count": 57,
+    "base_fraud_fraction": 0.0010044937879989425,
+    "cut": -2.072775741241762,
+    "direction": "low",
+    "eligible_legitimate_rows": 4361,
+    "feature": "V4",
+    "injection_rate_within_eligible_region": 0.1,
+    "region_rows": 4361,
+    "shifted_fraud_count": 493,
+    "shifted_fraud_fraction": 0.0086879901312891,
+    "synthetic_frauds_added": 436
+  }
+}

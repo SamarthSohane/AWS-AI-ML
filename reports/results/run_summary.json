@@ -1,0 +1,176 @@
+{
+  "concept_drift_performance_alert": {
+    "current_pr_auc": 0.13160716751328635,
+    "current_recall": 0.12614678899082568,
+    "performance_alert": true,
+    "pr_auc_drop": 0.6158520485981981,
+    "pr_auc_drop_threshold": 0.05,
+    "recall_drop": 0.6170964542524175,
+    "recall_drop_threshold": 0.1,
+    "recommended_action": "Investigate concept drift and retrain after labels are validated.",
+    "reference_pr_auc": 0.7474592161114845,
+    "reference_recall": 0.7432432432432432,
+    "status": "ALERT"
+  },
+  "cost_model": {
+    "description": "FN cost explicitly overridden by the run configuration",
+    "false_negative_cost": 90.37,
+    "false_positive_cost": 5.0
+  },
+  "dataset": {
+    "duplicates_removed": 1081,
+    "raw_columns": 31,
+    "raw_fraud_count": 492,
+    "raw_fraud_fraction": 0.001727485630620034,
+    "raw_rows": 284807,
+    "rows_after_cleaning": 283726
+  },
+  "drift_alert": {
+    "alert": true,
+    "average_psi": 0.23283486881225393,
+    "average_psi_threshold": 0.1,
+    "feature_fraction_threshold": 0.2,
+    "features_flagged_fraction": 0.5517241379310345,
+    "features_moderate_psi": 9,
+    "features_monitored": 29,
+    "features_significant_psi": 7,
+    "maximum_model_score_psi": 0.02584215463034902,
+    "maximum_psi": 1.4633009662873517,
+    "model_score_psi_threshold": 0.1,
+    "recommended_action": "Model retraining/review recommended.",
+    "status": "ALERT",
+    "triggered_by": "flagged feature fraction, average feature PSI"
+  },
+  "final_supervised_model": "logistic_regression",
+  "final_supervised_threshold": 0.9996296180473286,
+  "isolation_forest_threshold": 0.27366132170141544,
+  "reproducibility": {
+    "random_seed": 42
+  },
+  "retraining_demo": {
+    "adaptation_rows": 45396,
+    "calibration_metrics": {
+      "actual_positive_rate": 0.007049079214027668,
+      "estimated_total_cost": 6082.200000000001,
+      "f1": 0.1724137931034483,
+      "false_negative_cost": 90.37,
+      "false_negative_rate": 0.75,
+      "false_negatives": 60,
+      "false_positive_cost": 5.0,
+      "false_positive_rate": 0.011713550448132043,
+      "false_positives": 132,
+      "pr_auc": 0.19662668798563848,
+      "precision": 0.13157894736842105,
+      "predicted_positive_rate": 0.013393250506652568,
+      "recall": 0.25,
+      "roc_auc": 0.9145787115094507,
+      "threshold": 0.9609471200290052,
+      "true_negatives": 11137,
+      "true_positives": 20
+    },
+    "calibration_rows": 11349,
+    "result_note": "Prototype only; the synthetic concept labels are not production ground truth.",
+    "retrained_threshold": 0.9609471200290052,
+    "test_rows": 56746
+  },
+  "split": {
+    "actual_rows": {
+      "test": 56746,
+      "train": 170235,
+      "validation": 56745
+    },
+    "fraud_counts": {
+      "test": 74,
+      "train": 342,
+      "validation": 57
+    },
+    "method": "chronological by Time; ties kept together",
+    "requested_fractions": {
+      "test": 0.2,
+      "train": 0.6,
+      "validation": 0.2
+    },
+    "time_ranges": {
+      "test": [
+        145234.0,
+        172792.0
+      ],
+      "train": [
+        0.0,
+        120392.0
+      ],
+      "validation": [
+        120393.0,
+        145233.0
+      ]
+    }
+  },
+  "test_comparison": [
+    {
+      "actual_positive_rate": 0.0013040566735981391,
+      "estimated_total_cost": 1822.0300000000002,
+      "f1": 0.7333333333333333,
+      "false_negative_cost": 90.37,
+      "false_negative_rate": 0.25675675675675674,
+      "false_negatives": 19,
+      "false_positive_cost": 5.0,
+      "false_positive_rate": 0.00037055335968379444,
+      "false_positives": 21,
+      "missed_fraud_amount": 2639.27,
+      "model": "Logistic Regression (class-weighted baseline)",
+      "pr_auc": 0.7474592161114845,
+      "precision": 0.7236842105263158,
+      "predicted_positive_rate": 0.001339301448560251,
+      "recall": 0.7432432432432432,
+      "roc_auc": 0.9818135558624689,
+      "threshold": 0.9996296180473286,
+      "true_negatives": 56651,
+      "true_positives": 55,
+      "type": "Supervised classifier"
+    },
+    {
+      "actual_positive_rate": 0.0013040566735981391,
+      "estimated_total_cost": 1430.18,
+      "f1": 0.718562874251497,
+      "false_negative_cost": 90.37,
+      "false_negative_rate": 0.1891891891891892,
+      "false_negatives": 14,
+      "false_positive_cost": 5.0,
+      "false_positive_rate": 0.0005822981366459627,
+      "false_positives": 33,
+      "missed_fraud_amount": 2390.73,
+      "model": "HistGradientBoosting (class-weighted)",
+      "pr_auc": 0.7956911049403641,
+      "precision": 0.6451612903225806,
+      "predicted_positive_rate": 0.0016388820357382018,
+      "recall": 0.8108108108108109,
+      "roc_auc": 0.9829155586628412,
+      "threshold": 0.29793501960147767,
+      "true_negatives": 56639,
+      "true_positives": 60,
+      "type": "Supervised classifier"
+    },
+    {
+      "actual_positive_rate": 0.0013040566735981391,
+      "estimated_total_cost": 6687.38,
+      "f1": 0.0,
+      "false_negative_cost": 90.37,
+      "false_negative_rate": 1.0,
+      "false_negatives": 74,
+      "false_positive_cost": 5.0,
+      "false_positive_rate": 0.0,
+      "false_positives": 0,
+      "missed_fraud_amount": 7727.67,
+      "model": "Isolation Forest (normal-only, unsupervised)",
+      "pr_auc": 0.03647802420792965,
+      "precision": 0.0,
+      "predicted_positive_rate": 0.0,
+      "recall": 0.0,
+      "roc_auc": 0.9498963690539778,
+      "threshold": 0.27366132170141544,
+      "true_negatives": 56672,
+      "true_positives": 0,
+      "type": "Unsupervised anomaly detector"
+    }
+  ]
+}

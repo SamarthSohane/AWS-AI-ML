@@ -1,0 +1,16 @@
+{
+  "alert": true,
+  "average_psi": 0.23283486881225393,
+  "average_psi_threshold": 0.1,
+  "feature_fraction_threshold": 0.2,
+  "features_flagged_fraction": 0.5517241379310345,
+  "features_moderate_psi": 9,
+  "features_monitored": 29,
+  "features_significant_psi": 7,
+  "maximum_model_score_psi": 0.02584215463034902,
+  "maximum_psi": 1.4633009662873517,
+  "model_score_psi_threshold": 0.1,
+  "recommended_action": "Model retraining/review recommended.",
+  "status": "ALERT",
+  "triggered_by": "flagged feature fraction, average feature PSI"
+}

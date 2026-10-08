@@ -1,0 +1,4 @@
+model,type,threshold,precision,recall,f1,pr_auc,roc_auc,true_positives,true_negatives,false_positives,false_negatives,false_positive_rate,false_negative_rate,predicted_positive_rate,actual_positive_rate,missed_fraud_amount,false_positive_cost,false_negative_cost,estimated_total_cost
+Logistic Regression (class-weighted baseline),Supervised classifier,0.999629618,0.6376811594,0.7719298246,0.6984126984,0.7726808523,0.9709258063,44,56663,25,13,0.0004410104431,0.2280701754,0.001215966164,0.001004493788,4474.09,5,90.37,1299.81
+HistGradientBoosting (class-weighted),Supervised classifier,0.2979350196,0.5487804878,0.7894736842,0.6474820144,0.7518703652,0.977670326,45,56651,37,12,0.0006526954558,0.2105263158,0.001445061239,0.001004493788,4473.33,5,90.37,1269.44
+"Isolation Forest (normal-only, unsupervised)",Unsupervised anomaly detector,0.2736613217,0,0,0,0.02214857048,0.9358510852,0,56687,1,57,1.764041773e-05,1,1.762269804e-05,0.001004493788,12231.09,5,90.37,5156.09

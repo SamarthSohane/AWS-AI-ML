@@ -1,0 +1,26 @@
+{
+  "adaptation_rows": 45396,
+  "calibration_metrics": {
+    "actual_positive_rate": 0.007049079214027668,
+    "estimated_total_cost": 6082.200000000001,
+    "f1": 0.1724137931034483,
+    "false_negative_cost": 90.37,
+    "false_negative_rate": 0.75,
+    "false_negatives": 60,
+    "false_positive_cost": 5.0,
+    "false_positive_rate": 0.011713550448132043,
+    "false_positives": 132,
+    "pr_auc": 0.19662668798563848,
+    "precision": 0.13157894736842105,
+    "predicted_positive_rate": 0.013393250506652568,
+    "recall": 0.25,
+    "roc_auc": 0.9145787115094507,
+    "threshold": 0.9609471200290052,
+    "true_negatives": 11137,
+    "true_positives": 20
+  },
+  "calibration_rows": 11349,
+  "result_note": "Prototype only; the synthetic concept labels are not production ground truth.",
+  "retrained_threshold": 0.9609471200290052,
+  "test_rows": 56746
+}

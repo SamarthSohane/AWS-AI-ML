@@ -1,0 +1,13 @@
+{
+  "current_pr_auc": 0.13160716751328635,
+  "current_recall": 0.12614678899082568,
+  "performance_alert": true,
+  "pr_auc_drop": 0.6158520485981981,
+  "pr_auc_drop_threshold": 0.05,
+  "recall_drop": 0.6170964542524175,
+  "recall_drop_threshold": 0.1,
+  "recommended_action": "Investigate concept drift and retrain after labels are validated.",
+  "reference_pr_auc": 0.7474592161114845,
+  "reference_recall": 0.7432432432432432,
+  "status": "ALERT"
+}

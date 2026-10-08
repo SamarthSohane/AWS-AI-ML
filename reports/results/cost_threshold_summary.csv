@@ -1,0 +1,4 @@
+model,model_key,validation_pr_auc,validation_selected_threshold,validation_expected_cost,selected_as_final_supervised
+Logistic Regression (class-weighted baseline),logistic_regression,0.7726808523,0.999629618,1299.81,True
+HistGradientBoosting (class-weighted),hist_gradient_boosting,0.7518703652,0.2979350196,1269.44,False
+"Isolation Forest (normal-only, unsupervised)",isolation_forest,0.02214857048,0.2736613217,5156.09,False
